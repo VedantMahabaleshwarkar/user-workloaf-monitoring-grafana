@@ -8,12 +8,12 @@ Install the community Grafana Operator by navigating to your Openshift Console -
 
 ## Create a Grafana Instance 
 
-`oc project opendatahub`
-`oc apply -f grafana-config.yaml`
+`oc project opendatahub`  
+`oc apply -f grafana-config.yaml`  
 
-Edit the grafana.yaml to select your login meathod for the grafana UI 
-`oc apply -f grafana.yaml`
-`oc adm policy add-cluster-role-to-user cluster-monitoring-view -z grafana-serviceaccount` 
+Edit the grafana.yaml to select your login meathod for the grafana UI   
+`oc apply -f grafana.yaml`  
+`oc adm policy add-cluster-role-to-user cluster-monitoring-view -z grafana-serviceaccount`   
 
 Get the authorization token to be able to connect to the User Workload Monitoring Stack by running : 
 
